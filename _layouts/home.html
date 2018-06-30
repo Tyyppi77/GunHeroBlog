@@ -2,31 +2,28 @@
 layout: default
 ---
 
-<div class="home">
+<div class="container-fluid">
+    <h1 class="text-center">GunHero Development Blog</h1>
+
     {{ content }}
 
     <!-- Displays the first post fully -->
     {% for post in site.posts limit:1 %}
-    <div class="container"> 
-        <h1>{{ post.title }} <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h2>
+    <div class="container p-3 my-5 mx-auto"> 
+        <h2>{{ post.title }} <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h2>
         
-        <div class="container">
-            {{ content }}
-        </div>
+        <p>{{ post.content }}</p>
     </div>
     {% endfor %}
     
     <!-- Displays only links to the other ones -->
     {% for post in site.posts offset:1 %}
-    <div class="container">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span>
-        <h1>
+    <div class="container p-3 my-5 mx-auto">
+        <h2>
             <a href="{{ post.url | relative_url }}">{{ post.title }} <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></a>
-        </h1>
+        </h2>
 
-        <div class="container">
-            <p>{{ post.content | strip_html | truncatewords:75}}</p>
-        </div>
+        <p>{{ post.content | strip_html | truncatewords:75}}</p>
         <a href="{{ post.url }}" role="button" class="btn btn-primary btn-lg m-2">Read more...</a>
     </div>
     {% endfor %}
