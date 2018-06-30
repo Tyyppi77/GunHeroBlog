@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Weekly Update #5 - Easter 21.3 - 28.3"
+date: 2016-03-28 16:27:00
+---
+I got a little sick over the weekend, so the progress this week was definitely not what I personally was looking for. However, I did manage to get some stuff done before losing my energy to work due to the little spring flu I caught.
+In the beginning of the week I managed to make grenades stick to boxes and characters. You can see that below. The feature makes grenades easier to use as they won't bounce everywhere.
+![*Latch*](/assets/WeeklyUpdates/5/GrenadeSticking.gif)
+I also made some little usability tweaks to the level editor. For an example, entities now react to property changes visually while editing. You can see a basic example below.
+![The flip-property allows the editor to change the direction of an entity.](/assets/WeeklyUpdates/5/PropertyEditing.gif)
+The coolest feature I got in this week was definitely the missile launcher!. It's a small object that launches missiles on a specified time period while the player is in view. You can either dodge the missiles or shoot them up. The launcher can be destroyed by shooting it, or if you're a cool guy like GunHero, you will obviously blow up a missile near it.
+![Missiles seek the sweat of the player.](/assets/WeeklyUpdates/5/Spawning.gif)
+
+![Now that's a pretty bad-ass trick!](/assets/WeeklyUpdates/5/MissileShooting.gif)
+I also made the missile size depend on its rotation. The calculation is pretty simple: I just rotate the four corner points of the sprite, and find out the smallest and biggest coordinates. The following gif displays the rotation okayish.
+![The rocket hitbox size is dependent on the rotation.](/assets/WeeklyUpdates/5/DynamicHitboxes.gif)
+I'll also show a screenshot of a level I'm currently working on. I however hit some performance issues due to the amount of dynamic objects, and I'm currently working on optimizing the game somehow to allow more dynamic objects.
+![The current iteration of a new prison level.](/assets/WeeklyUpdates/5/PrisonBreak.png)
+That's it for this week. Exams are starting on Thursday, which means that I'll have a little more time to spend developing. Hopefully I can get the performance issues sorted out so that I can continue producing content and specifically levels for a future demo release! Lastly, here is the fix list for this week. See you next week!
+*   Fixed killer enemies spawning an angel
+*   Fixed entity preview displaying behind level editor dialogs
+*   Fixed listbox hovering
+*   Fixed level editor crashing due to missing input devices
+*   Fixed entry rendering (and removed right alignment)
+*   Added a dummy character to level editor
+*   Added cancel button to level editor entity properties
+*   Tweaked the desert backgrounds a little

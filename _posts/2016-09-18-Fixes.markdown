@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Weekly Update #28 - Fixes 12.9 - 18.9"
+date: 2016-09-18 10:24:00
+---
+I didn't add any features to the game this week. I did however fix a bunch of bugs.
+
+First of all, I fixed all the resolution-positioning related bugs I was aware of. There weren't that many, but it was nice to go around and just make the game feel a lot more polished. I also had to tweak the level editor layout a little, so that it could be viewed on a monitor that's only 1366px wide. I looked trough the [Steam Hardware Survey](http://store.steampowered.com/hwsurvey) and decided that it was a good minimum resolution to support.
+
+Now, on to the fix I'm the most proud of: the startup crash. So, the game was randomly crashing during the loading state. I had no idea what was going on. It took me three and a half days before I was able to fix the bug. It turned out that occasionally, the loading thread was destroying render textures before they were actually created on the main thread. That caused memory getting deleted twice which for some reason was corrupting a gui element inside my level editor gui parent. I'm so happy that the crash is now fixed.
+
+Those are fixes that I wanted to write something about. I have my Swedish final next Friday, so next week I'll be focusing on that. After that I should be able to get back to a little faster development speed. Thanks for dropping by!
+
+*   Fixed player platform interactions
+*   Fixed game not rendering after DX context lost
+*   Fixed listboxes not showing last item
+*   Fixed game join timer positioning
+*   Fixed listboxes selecting second item
+*   Added thumbnail markers to all levels
+*   Added snow layers to forest blade spinner intro level
+*   Improved splash screen look

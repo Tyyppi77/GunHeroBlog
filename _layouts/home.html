@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+    {{ content }}
+
+    <!-- Displays the first post fully -->
+    {% for post in site.posts limit:1 %}
+    <div class="container" id="latest">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span>
+        <h2 class="title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+    
+        <div class="blog-post">
+            {{ post.content }}
+        </div>
+    </div>
+    {% endfor %}
+    
+    <!-- Displays only links to the other ones -->
+    {% for post in site.posts offset:1 %}
+    <div class="container">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span>
+        <h2 class="title">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+
+        <div class="blog-post">
+            <p>{{ post.content | strip_html | truncatewords:75}}</p>
+        </div>
+        <a href="{{ post.url }}" class="button read-more">Read more...</a>
+    </div>
+    {% endfor %}
+
+    <a class="button rss-subscribe" href="{{ "/feed.xml" | relative_url }}">Subscribe via RSS</a>
+</div>

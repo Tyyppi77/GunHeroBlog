@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Weekly Update #21 - Weaponry 25.7 - 31.7"
+date: 2016-07-31 10:38:00
+---
+Some nice stuff got added to the game this week, so I'm really happy to wrap it all up! Let's go!
+First and probably the biggest new feature that got added is the cannon entity. These cannon entities are built to fire different kinds of projectiles, however currently they only fire burning fireballs. Perhaps not the most realistic scenario, but pretty cool looking! I got my level design flow on with these new mechanics and made some nice leves that utilize the cannon behaviour. I even recorded a gameplay video of one of those levels.
+
+![Such recoil animation.](/assets/WeeklyUpdates/21/Cannon.gif)
+
+<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/wNkfhSTMMls" width="100%"></iframe>
+These cannons took quite some time, but next up in the list were bazooka enemies. The implementation for those was quite straight-forward, as essentially the enemy has a tweaked sprite with hands drawn to a correct bazooka-holding position. The bazooka itself utilizes the dynamic weapon system of the game.
+![Oh my god, he has a bazooka!](/assets/WeeklyUpdates/21/Bazooka.gif)
+Lastly I started experimenting with decals. I'm starting to like how they look, however a lot of work is needed to get them to look slick and smooth. Besides the blood particles, I want to see if I could add at least explosion and bullet hit decals.
+![Not perfect, but starting to get there.](/assets/WeeklyUpdates/21/Decals.png)
+Next week I want to keep on improving the decals, and probably look into starting to work on the wintery forest environment. Thanks for dropping by!
+
+*   Fixed particle lifetime bugs
+*   Fixed entity interactions regarding cannon projectiles

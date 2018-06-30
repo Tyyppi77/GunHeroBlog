@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Weekly Update #9 - Sounds 18.4 - 24.4"
+date: 2016-04-24 17:55:00
+---
+I have absolutely nothing visual to show from this week. I spent the whole day making sounds with SFXR and adding those to the game. There's still a lot that needs to be added, but the world of the sounds in GunHero is slowly starting to form. I'm really happy with the way it's sounding. I have no idea what the music in GunHero will sound like, but that's something I need to come up with soon.
+I've also spent time to fix some more or less critical bugs. That's mostly what the change list is composed of this week. I hope I'll get back to making visual progress next week!
+*   Fixed save-menu displaying level filenames
+*   Fixed weapons getting stuck on boxes and their owners
+*   Fixed parallax layers being awkward on tall levels
+*   Fixed join-menu listening to escape keys
+*   Fixed explosion damage going trough solid levels
+*   Improved the enemy AI
+*   Reduced memory usage by not loading particle effects for tile entities
+*   Added screenshot functionality to the gif capturer
