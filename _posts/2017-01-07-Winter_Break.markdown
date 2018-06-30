@@ -22,8 +22,6 @@ Finally, the game got not one, not two but three new tracks! The tracks probably
 
 Finally, I got some feedback that the transitions in the game felt lame. So, instead of boring fade ins and outs, states and screens are now swapped with a cool sliding animation!
 
-{% video /assets/WeeklyUpdates/42/Slide.mp4 %}
-
 A bunch of other stuff probably happened but I don't remember it right now, so just take my word that I had a productive winter break! I'll get back to writing these updates weekly now. Thanks for dropping by!
 
 * Added suicidal behaviour to grenadiers
