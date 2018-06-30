@@ -23,7 +23,7 @@ github_username:  Tyyppi77
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 gems:
   - jekyll-feed
   - octopress-paginate
