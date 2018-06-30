@@ -8,7 +8,7 @@ layout: default
     <!-- Displays the first post fully -->
     {% for post in site.posts limit:1 %}
     <div class="container"> 
-        <h1>{{ page.title }} <span class="text-muted">{{ page.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h2>
+        <h1>{{ post.title }} <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h2>
         
         <div class="container">
             {{ content }}
@@ -21,7 +21,7 @@ layout: default
     <div class="container">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span>
         <h1>
-            <a href="{{ post.url | relative_url }}">{{ page.title }} <span class="text-muted">{{ page.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></a>
+            <a href="{{ post.url | relative_url }}">{{ post.title }} <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></a>
         </h1>
 
         <div class="container">
