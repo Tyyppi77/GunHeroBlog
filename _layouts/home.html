@@ -2,49 +2,28 @@
 layout: default
 ---
 
-<img class="img-fluid p-3 background-box d-block mx-auto text-center my-5" src="assets/Logo.png"/>
-
-<div class="row mx-auto w-75">
-
-    {{ content }}
-
-    <div class="col col-md-9">
-
-        <h2>Most recent post:</h2>
-        <!-- Displays the first post fully -->
-        {% for post in site.posts limit:1 %}
-        <div class="container p-3 mb-5 mx-auto background-box"> 
-            <h2>{{ post.title }}</h2>
-            <h5><span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h5>
-            
-            <p>{{ post.content }}</p>
-        </div>
-        {% endfor %}
-        
-        <h2>Older posts:</h2>
-
-        <!-- Displays only links to the other ones -->
-        {% for post in site.posts offset:1 %}
-        <div class="container p-3 mb-2 mx-auto background-box">
-            <h2>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h2>
-            <h5> <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h5>
-
-            <p>{{ post.content | strip_html | truncatewords:75}}</p>
-            <a href="{{ post.url }}" role="button" class="btn btn-primary btn-lg m-2">Read more...</a>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="col col-md-3">
-        <h2>All posts:</h2>
-
-        <ul class="mb-2 list-group background-box">
-        {% for post in site.posts %}
-            <li class="list-group-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-        {% endfor %}
-        </ul>
-
-        <a href="{{ "/feed.xml" | relative_url }}" role="button" class="btn btn-primary btn-lg m-2 mx-auto d-block">Subscribe via RSS</a>
-    </div>
+<!-- Displays the first post fully -->
+{% for post in site.posts limit:1 %}
+<div class="container p-3 mb-5 mx-auto background-box"> 
+    <p class="text-muted">Most recent post:</p>
+    <h2>{{ post.title }}</h2>
+    <h5><span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h5>
+    
+    <p>{{ post.content }}</p>
 </div>
+{% endfor %}
+
+<h2>Older posts:</h2>
+
+<!-- Displays only links to the other ones -->
+{% for post in site.posts offset:1 %}
+<div class="container p-3 mb-2 mx-auto background-box">
+    <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <h5> <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h5>
+
+    <p>{{ post.content | strip_html | truncatewords:75}}</p>
+    <a href="{{ post.url }}" role="button" class="btn btn-primary btn-lg m-2">Read more...</a>
+</div>
+{% endfor %}

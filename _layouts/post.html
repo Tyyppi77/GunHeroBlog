@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<div class="container">
-    <h1>{{ page.title }} <span class="text-muted">{{ page.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h2>
+<div class="container background-box">
+    <h2>{{ page.title }}</h2>
+    <h5><span class="text-muted">{{ page.date | date: "%b %-d, %Y" }} - Olli-Samuli Lehmus</span></h5>
     
-    <div class="container">
-        {{ content }}
-    </div>
+    {{ content }}
 </div>

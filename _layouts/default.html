@@ -14,7 +14,24 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    {{ content }}
+    <img class="img-fluid p-3 background-box d-block mx-auto text-center my-5" src="/assets/Logo.png"/>
+
+    <div class="row mx-auto w-75">
+
+        <div class="col col-md-9">
+            {{ content }}
+        </div>
+        <div class="col col-md-3 background-box">
+            <h2>All posts:</h2>
+            <ul class="mb-2 list-group">
+            {% for post in site.posts %}
+                <li class="list-group-item"><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+
+            <a href="{{ "/feed.xml" | relative_url }}" role="button" class="btn btn-primary btn-lg m-2 mx-auto d-block">Subscribe via RSS</a>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
