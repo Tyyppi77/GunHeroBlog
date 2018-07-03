@@ -31,6 +31,8 @@ img {
 a {
     color: #72b400;
     text-shadow: 0px 1px #1c2a00;
+
+    word-break: break-all;
 }
 
 a:hover {
@@ -50,7 +52,8 @@ h2 {
 }
 
 .text-muted {
-    text-shadow: 0px 1px #2d2d2d;
+    color: #a1acb5 !important;
+    text-shadow: 0px 1px #323232;
 }
 
 .btn-primary {
