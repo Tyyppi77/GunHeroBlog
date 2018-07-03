@@ -8,7 +8,7 @@ Yeahyeah, I missed last week's post. My finals started last week and the week be
 
 I did start to do some preliminary work on a trailer though. I played through the game and I now have recordings of a playthrough that I can use to make some trailer drafts / mockups. I also had this vision of the capsule image replicated at the end of the trailer with cool animations and stuff. So this is what I came up with in a few hours! Pretty cool, isn't it?
 
-[![Final Trailer](http://img.youtube.com/vi/QDKYdJFLqO4/0.jpg)](http://www.youtube.com/watch?v=QDKYdJFLqO4 "GunHero Launch Trailer")
+<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/QDKYdJFLqO4" width="100%"></iframe>
 
 That's really all I wanted to show this week. A few more finals left next week and then all my focus will be aimed at finishing the game and releasing it! Thanks for dropping by!
 

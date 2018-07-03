@@ -10,7 +10,7 @@ First of all, I got started with mastering the tracks in the game. There's still
 
 Then onto the actual cool progress I have to show. I realized that the old world map was incredibly slow to traverse, so I decided to essentially redo the world map. I split the world map into two sections: First screen allows the player to choose an area (prison, jungle, winter, desert or boss base) and the second screen is the actual level selection. This allows the player to switch areas much much faster. I also now show a separate completion percentage for each area (not shown in the video). All in all I think the new system looks really awesome.
 
-[![World Map](https://img.youtube.com/vi/JveMueXxgsM/0.jpg)](https://www.youtube.com/watch?v=JveMueXxgsM)
+<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/JveMueXxgsM" width="100%"></iframe>
 
 You can see new sliding transitions in the video. I swapped out the old fades pretty much everywhere due to the fact that the slides look a lot more action-like and are just awesome. Anyways, that's it for this week, thanks a lot for dropping by!
 
