@@ -7,9 +7,9 @@ A week has passed and it's time for another weekly update. As this week was scho
 In the beginning of the week I worked on improving the prison theme. I added new structure and dirt tiles for the terrain, and I also added some prop tiles, such as fences and a new ladder type.
 ![The new prison theme.](/assets/WeeklyUpdates/2/PrisonTheme.png)
 I had already though that adding new brushes to the editor had been a little too tedious, as even the most simple single-tile brushes had required a separate class to be created, I decided to refactor the brush system in the level editor. For an example the new pipe brush that uses 4-bit tile masking underneath to create smooth pipelines can be created with the following (long) line of code:
-{% highlight c++ %}
-AddBrushData("PrisonPipeBrush", "Prison Pipe", new SLevelEditorBrushInfoMasker(ELevelEditorTileType::FOREGROUND_PIPE_PRISON, ELevelEditorTileLayerType::BACKGROUND_PROP, 1170));
-{% endhighlight %}
+
+<code>AddBrushData("PrisonPipeBrush", "Prison Pipe", new SLevelEditorBrushInfoMasker(ELevelEditorTileType::FOREGROUND_PIPE_PRISON, ELevelEditorTileLayerType::BACKGROUND_PROP, 1170));</code>
+
 I also added level resizing to the level editor. At first implementing resizing seemed quite a hard task, but in the end I only really had to implement a few small utility methods to the tile layer and to the QuadTree classes. GunHero uses QuadTrees for managing pretty much everything in the levels, mainly because they allow for fast querying of data from them. Here you can see the level resizing in action:
 ![A test level gets resized really quickly.](/assets/WeeklyUpdates/2/LevelResizing.gif)
 The next bigger feature I worked on was adding tooltips to the level editor, hence making it a little more user-friendly. The tooltip implementation is simply a modified label with a timer setup to display it.

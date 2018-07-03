@@ -9,7 +9,7 @@ The biggest gameplay additions this week are the doors. I added doors that fit t
 
 ![Bunker doors look a lot heavier.](/assets/WeeklyUpdates/11/BunkerDoor.gif)
 Also, to practice video editing and capturing for future needs, I recorded some gameplay footage and compiled it into a video. I wanted the video to show the different environments and color themes of the game, and I think the video turned out quite well. I also added the video to the [Features](#Features) section.
-<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/554YJKJ-XSw" width="100%"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/554YJKJ-XSw?showinfo=0&rel=0" width="100%"></iframe></div>
 That's the visual progress of this week. As usual, I made some non-visual changes and fixes, so here's also the changelist. Have a nice week!
 *   Fixed screen shaking
 *   Fixed boss sound effects

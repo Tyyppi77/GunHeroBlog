@@ -8,7 +8,7 @@ First and probably the biggest new feature that got added is the cannon entity. 
 
 ![Such recoil animation.](/assets/WeeklyUpdates/21/Cannon.gif)
 
-<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/wNkfhSTMMls" width="100%"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/wNkfhSTMMls?showinfo=0&rel=0" width="100%"></iframe></div>
 These cannons took quite some time, but next up in the list were bazooka enemies. The implementation for those was quite straight-forward, as essentially the enemy has a tweaked sprite with hands drawn to a correct bazooka-holding position. The bazooka itself utilizes the dynamic weapon system of the game.
 ![Oh my god, he has a bazooka!](/assets/WeeklyUpdates/21/Bazooka.gif)
 Lastly I started experimenting with decals. I'm starting to like how they look, however a lot of work is needed to get them to look slick and smooth. Besides the blood particles, I want to see if I could add at least explosion and bullet hit decals.

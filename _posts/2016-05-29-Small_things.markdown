@@ -14,7 +14,7 @@ I also fixed water physics on dead bodies. The effect look pretty nice and makes
 ![Poor player.](/assets/WeeklyUpdates/14/WaterDeath.gif)
 In the beginning of the week I spent some time making new levels for the game, and in the result of a random thought I decided that it would be cool to make a timelapse video of me making a level using the level editor. The video turned out pretty well I think. I added the song I made to the background and sped up the footage 16 times. So here's the video, and the change list for the week. Have a nice week!
 
-<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/Ldv9QJke91E" width="100%"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/Ldv9QJke91E?showinfo=0&rel=0" width="100%"></iframe></div>
 
 *   Fixed empty brush crash
 *   Fixed pause menu not pausing music

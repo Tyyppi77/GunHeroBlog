@@ -26,6 +26,7 @@ img {
 	/* Copied from .img-fluid */
 	max-width: 100%;
 	height: auto;
+    display: block;
 }
 
 a {
@@ -59,6 +60,7 @@ h2 {
 .btn-primary {
     border-radius: 0px;
     transition: none;
+    box-shadow: none !important;
 }
 
 .btn-primary:hover {
@@ -66,4 +68,19 @@ h2 {
     text-shadow: 0px 1px #1c2a00;
     background-color: rgba(68, 68, 68, 0.64);
     border-color: rgba(82, 82, 82, 0.4);
+}
+
+.btn-primary:active {
+    color: #72b400 !important;
+    text-shadow: 0px 1px #1c2a00  !important;
+    background-color: rgba(68, 68, 68, 0.64) !important;
+    border-color: rgba(82, 82, 82, 0.4) !important;
+}
+
+code {
+    color: #2fdda5;
+}
+
+.page-nav {
+    overflow: auto;
 }

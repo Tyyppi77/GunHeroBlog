@@ -8,7 +8,7 @@ It's been a while. A long while. Anyways, I felt like updating the blog. Here's 
 
 Here's the trailer, which turned out pretty cool:
 
-<iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/_T3mx1jz5tM" width="100%"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" class="video" frameborder="0" height="50%" src="https://www.youtube.com/embed/_T3mx1jz5tM?showinfo=0&rel=0" width="100%"></iframe></div>
 
 So yeah, GunHero has Steam Workshop support now and the update also adds 25 new canyon-themed challenging levels to the campaign.
 
