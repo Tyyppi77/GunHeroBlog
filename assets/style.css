@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-    max-width: 70vw;
+    max-width: 90vw;
     height: auto;
     image-rendering: crisp-edges !important;
 }
