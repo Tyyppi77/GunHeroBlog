@@ -16,16 +16,16 @@
     <title>GunHero Development Blog</title>
   </head>
   <body>
-    <span class="d-block mx-auto text-center">
-      <a href="/" class="center-block"><img class="img-fluid px-5 py-3 background-box m-5 d-inline" src="/assets/Logo.png"/></a>
-    </span>
+    <header class="text-center">
+      <a href="/" class="d-inline-block mx-auto my-5 logo background-box p-3"><img class="" src="/assets/Logo.png"/></a>
+    </header>
 
-    <div class="row mx-auto w-75 align-items-start">
+    <div class="container row mx-auto align-items-start">
 
-        <div class="col-xl-9 col-lg-12 mb-4">
+        <div class="col-xl-8 col-lg-12 mb-4">
             {{ content }}
         </div>
-        <div class="col-xl-3 d-none d-xl-block background-box p-3 mb-4">
+        <div class="col-xl-4 d-none d-xl-block background-box p-3 mb-4">
             <h2 class="">All posts:</h2>
             <ul class="mb-3 pl-0">
             {% for post in site.posts %}

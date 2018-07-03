@@ -7,6 +7,8 @@ body {
     font-family: 'Play', sans-serif;
 
     text-shadow: 0px 1px black;
+
+    word-break: break-word;
 }
 
 .background-box {
@@ -18,8 +20,16 @@ body {
     background-clip: padding-box;
 }
 
+.logo {
+    max-width: 70vw;
+    height: auto;
+    image-rendering: crisp-edges !important;
+}
+
 ul {
     list-style: square inside;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 img {
@@ -32,8 +42,6 @@ img {
 a {
     color: #72b400;
     text-shadow: 0px 1px #1c2a00;
-
-    word-break: break-all;
 }
 
 a:hover {
