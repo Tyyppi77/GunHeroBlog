@@ -92,3 +92,7 @@ code {
 .page-nav {
     overflow: auto;
 }
+
+.read-more {
+    white-space: pre;
+}
